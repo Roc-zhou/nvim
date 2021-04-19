@@ -32,6 +32,10 @@ Plug 'fatih/vim-go', { 'tag': '*' } " go 主要插件
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}		" coc
 
+
+Plug 'gcmt/wildfire.vim'          " 选择代码块
+Plug 'tpope/vim-surround'         " 
+
 call plug#end()
 " **********************
 " 插件列表结束
