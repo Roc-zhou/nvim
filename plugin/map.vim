@@ -3,6 +3,7 @@
 " set LEADER
 let mapleader=" "
 
+map tu :tabe<CR>
 map S :w<CR>
 map Q :q<CR>
 map R :source $MYVIMRC<CR>
