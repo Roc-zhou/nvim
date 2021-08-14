@@ -29,6 +29,7 @@ set tabstop=2             " 设置Tab长度4空格
 set shiftwidth=2          " 设置自动缩进长度为4空格
 set scrolloff=10
 filetype plugin indent on " 启用自动补全
+filetype plugin on
 
 exec "nohlsearch"
 
