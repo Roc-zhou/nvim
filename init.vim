@@ -1,5 +1,18 @@
+
+"  .----------------.  .----------------.  .----------------.  .----------------.  .----------------. 
+" | .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
+" | | ____    ____ | || |  ____  ____  | || | ____   ____  | || |     _____    | || | ____    ____ | |
+" | ||_   \  /   _|| || | |_  _||_  _| | || ||_  _| |_  _| | || |    |_   _|   | || ||_   \  /   _|| |
+" | |  |   \/   |  | || |   \ \  / /   | || |  \ \   / /   | || |      | |     | || |  |   \/   |  | |
+" | |  | |\  /| |  | || |    \ \/ /    | || |   \ \ / /    | || |      | |     | || |  | |\  /| |  | |
+" | | _| |_\/_| |_ | || |    _|  |_    | || |    \ ' /     | || |     _| |_    | || | _| |_\/_| |_ | |
+" | ||_____||_____|| || |   |______|   | || |     \_/      | || |    |_____|   | || ||_____||_____|| |
+" | |              | || |              | || |              | || |              | || |              | |
+" | '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
+"  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
+" 
+
 syntax on                 " 打开语法高亮
-set nocompatible          " 关闭兼容模式
 set number                " 行号
 set relativenumber
 set encoding=utf-8
@@ -8,12 +21,13 @@ set cursorline            " 光标所在的当前行高亮
 set wrap                  " 自动折行，即太长的行分成几行显示
 set showcmd               " 命令模式下，在底部显示，当前键入的指令
 set wildmenu              " 命令模式下，底部操作指令按下 Tab 键自动补全
+set ignorecase            " 忽略大小写
 set hlsearch              " 搜索时，高亮显示匹配结果
 set incsearch             " 输入搜索模式时，每输入一个字符，就自动跳到第一个匹配的结果
 set showmatch             " 显示括号匹配
-set tabstop=4             " 设置Tab长度4空格
-set shiftwidth=4          " 设置自动缩进长度为4空格
-" set autoindent            " 继承前一行的缩进方式，适用于多行注释
+set tabstop=2             " 设置Tab长度4空格
+set shiftwidth=2          " 设置自动缩进长度为4空格
+set scrolloff=10
 filetype plugin indent on " 启用自动补全
 
 exec "nohlsearch"
@@ -25,27 +39,22 @@ exec "nohlsearch"
 
 
 " **********************
-" 插件列表开始
+" 插件列表开始 vim-plug
 " **********************
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'scrooloose/nerdtree'          " 用来提供一个导航目录的侧边栏
-Plug 'junegunn/vim-easy-align'      " 可以快速对齐的插件
-Plug 'jistr/vim-nerdtree-tabs'      " 可以使 nerdtree 的 tab 更加友好些
-Plug 'Xuyuanp/nerdtree-git-plugin'  " 可以在导航目录中看到 git 版本信息
-Plug 'airblade/vim-gitgutter'       " 可以在文档中显示 git 信息
-Plug 'vim-airline/vim-airline'      " Vim状态栏插件，包括显示行号，列号，文件类型，文件名，以及Git状态
-Plug 'majutsushi/tagbar'
-Plug 'morhetz/gruvbox'
+Plug 'scrooloose/nerdtree'                      " 用来提供一个导航目录的侧边栏
+Plug 'Xuyuanp/nerdtree-git-plugin'              " 显示 NERDTree 中文件和文件夹的 Git 状态标志
+Plug 'junegunn/vim-easy-align'                  " 可以快速对齐的插件
+Plug 'vim-airline/vim-airline'                  " Vim状态栏插件，包括显示行号，列号，文件类型，文件名，以及Git状态
+Plug 'airblade/vim-gitgutter'                   " 可以在文档中显示 git 信息
+Plug 'gcmt/wildfire.vim'                        " 选择代码块
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " coc
 
-Plug 'fatih/vim-go', { 'tag': '*' } " go 主要插件
-Plug 'dgryski/vim-godef'            " go 中的代码追踪，输入 gd 就可以自动跳转
-Plug 'neoclide/coc.nvim', {'branch': 'release'}		" coc
-Plug 'gcmt/wildfire.vim'          " 选择代码块
-Plug 'tpope/vim-surround'         " 
-
+Plug 'fatih/vim-go', { 'tag': '*' }             " go 主要插件
 
 call plug#end()
+
 " **********************
 " 插件列表结束
 " **********************

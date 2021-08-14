@@ -1,4 +1,16 @@
-let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-tsserver', 'coc-css', 'coc-python', 'coc-marketplace']
+let g:coc_global_extensions = [
+			\ 'coc-json',
+			\ 'coc-vimlsp',
+			\ 'coc-tsserver',
+			\ 'coc-css',
+			\ 'coc-python',
+			\ 'coc-translator',
+			\ 'coc-marketplace']
+
+" coc plugin map
+nmap ff <Plug>(coc-translator-p)
+
+
 
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -66,11 +78,4 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " Symbol rnaming.
 nmap <leader>rn <Plug>(coc-rename)
 
-
-
-
-
-
-
-
-
+c
