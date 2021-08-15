@@ -12,4 +12,6 @@ inoremap { {}<LEFT>
 inoremap < <><LEFT>
 
 
+noremap <LEADER><CR> :nohlsearch<CR>
+
 
