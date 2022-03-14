@@ -1,5 +1,6 @@
-map tt :NERDTreeToggle<CR>					 
-let NERDTreeShowLineNumbers=1                 " 显示行号
+map tt :NERDTreeToggle<CR>
+
+let NERDTreeShowLineNumbers=0                 " 显示行号
 let NERDTreeAutoCenter=0                      " 打开文件时是否显示目录
 let NERDTreeShowHidden=0                      " 是否显示隐藏文件
 let NERDTreeIgnore=['\.pyc','\~$','\.swp']    " 忽略一下文件的显示
