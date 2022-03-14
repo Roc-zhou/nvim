@@ -1,3 +1,4 @@
+map tt :NERDTreeMirror<CR>
 map tt :NERDTreeToggle<CR>
 
 let NERDTreeShowLineNumbers=0                 " 显示行号

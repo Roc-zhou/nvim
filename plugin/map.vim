@@ -5,8 +5,6 @@ map S :w<CR>
 map Q :q<CR>
 map R :source $MYVIMRC<CR>
 
-
-map <C-w> :tabclose<CR>
 noremap <leader>1 1gt
 noremap <leader>2 2gt
 noremap <leader>3 3gt
