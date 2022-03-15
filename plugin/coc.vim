@@ -9,6 +9,7 @@ let g:coc_global_extensions = [
 
 " coc plugin map
 nmap ff <Plug>(coc-translator-p)
+vmap ff <Plug>(coc-translator-pv)
 
 
 
@@ -77,5 +78,3 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol rnaming.
 nmap <leader>rn <Plug>(coc-rename)
-
-c
