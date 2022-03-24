@@ -44,6 +44,7 @@ set lazyredraw
 set completeopt=longest,noinsert,menuone,noselect,preview " 文件类型自动检测
 filetype plugin indent on                                 " 启用自动补全
 filetype plugin on
+autocmd BufReadPost * normal! g`"
 
 exec "nohlsearch"
 
@@ -71,7 +72,6 @@ Plug 'airblade/vim-gitgutter'                   " 可以在文档中显示 git �
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " coc
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-
 Plug 'fatih/vim-go', { 'tag': '*' }             " go 主要插件
 
 call plug#end()
