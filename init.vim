@@ -21,7 +21,7 @@ set history=1000
 set iskeyword+=_,$,@,%,#,-                                " 带有如下符号的单词不要被换行分割
 set list
 set showcmd
-set listchars=tab:\|\ ,trail:▫
+"set listchars=tab:\|\ ,trail:▫
 set clipboard=unnamed                                     " 复制共享
 set foldenable                                            " 激活折叠功能
 set foldmethod=indent
@@ -62,6 +62,7 @@ endif
 " **********************
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'nathanaelkane/vim-indent-guides'
 Plug 'scrooloose/nerdtree'                      " 用来提供一个导航目录的侧边栏
 Plug 'ryanoasis/vim-devicons'
 Plug 'Xuyuanp/nerdtree-git-plugin'              " 显示 NERDTree 中文件和文件夹的 Git 状态标志
