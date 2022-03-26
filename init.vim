@@ -71,6 +71,7 @@ Plug 'airblade/vim-gitgutter'                   " 可以在文档中显示 git �
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " coc
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'mhinz/vim-startify'
 
 Plug 'fatih/vim-go', { 'tag': '*' }             " go 主要插件
 
