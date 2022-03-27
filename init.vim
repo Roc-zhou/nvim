@@ -97,10 +97,14 @@ Plug 'airblade/vim-gitgutter'                   " 可以在文档中显示 git �
 " Plug 'gcmt/wildfire.vim'                        " 选择代码块
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " coc
 Plug 'nvim-lua/plenary.nvim'
+Plug 'sindrets/diffview.nvim'                   " 文件修改差别
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'mhinz/vim-startify'
 Plug 'fatih/vim-go', { 'tag': '*' }             " go 主要插件
 Plug 'preservim/nerdcommenter'                  " 注释插件
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'akinsho/toggleterm.nvim'                  " 悬浮终端
+Plug 'folke/trouble.nvim'                       " 漂亮的诊断列表
 
 " Plug 'file://'
 
@@ -109,4 +113,7 @@ call plug#end()
 " **********************
 " 插件列表结束
 " **********************
+
+
+lua require('roc')
 
