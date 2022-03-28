@@ -36,6 +36,7 @@ set tabstop=4                                             " 设置Tab长度2空�
 set shiftwidth=4                                          " 设置自动缩进长度为2空格
 set expandtab                                             " TAB替换为空格
 set autoindent                                            " 设置自动缩进
+set autoread                                              " 文件被修改的时候自动重新读取
 set autoread " 文件被修改的时候自动重新读取
 set scrolloff=10
 set ttyfast
