@@ -115,6 +115,45 @@ call plug#end()
 " 插件列表结束
 " **********************
 
-
 lua require('roc')
+
+" 自动添加头部注释
+autocmd BufNewFile *.sh exec ":call SetTitle()"
+
+func SetTitle()
+    if &filetype == 'sh'
+        call setline(1,"#!/bin/bash")
+        call setline(2,"")
+        call SetComment_sh()
+   endif
+endfun
+
+func SetComment_sh()
+    call setline(3, "#================================================================")
+    call setline(4, "#")
+    call setline(5, "#   Filename:   ".expand("%:t"))
+    call setline(6, "#   Creator:    Roc")
+    call setline(7, "#   CreateTime: ".strftime("%Y年%m月%d日"))
+    call setline(8, "#   Remark:")
+    call setline(9, "#")
+    call setline(10, "#================================================================")
+    call setline(11, "")
+    call setline(12, "")
+endfunc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
