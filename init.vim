@@ -122,13 +122,13 @@ autocmd BufNewFile *.sh exec ":call SetTitle()"
 
 func SetTitle()
     if &filetype == 'sh'
-        call setline(1,"#!/bin/bash")
-        call setline(2,"")
         call SetComment_sh()
    endif
 endfun
 
 func SetComment_sh()
+    call setline(1, "#!/bin/bash")
+    call setline(2, "")
     call setline(3, "#================================================================")
     call setline(4, "#")
     call setline(5, "#   Filename:   ".expand("%:t"))
