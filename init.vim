@@ -107,6 +107,7 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'akinsho/toggleterm.nvim'                  " 悬浮终端
 Plug 'folke/trouble.nvim'                       " 漂亮的诊断列表
 
+" 本地插件引入
 " Plug 'file://'
 
 call plug#end()
